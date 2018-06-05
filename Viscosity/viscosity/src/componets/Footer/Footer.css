@@ -1,0 +1,42 @@
+  .footer{
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    clear: both;
+    display: block;
+    background-color: #2B2B2B;
+    color: azure;
+
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .footer .right-content, 
+  .footer .left-content{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .right-content{
+    float: right;
+  }
+  .left-content{
+    float: left;
+  }
+
+.follow-us div{
+  float: left;
+  margin-right: 5px;
+  color: #fff;
+}
+
+
+  .footer a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .footer a:hover{
+    font-weight: 500;
+    color: #EABC47;
+  }

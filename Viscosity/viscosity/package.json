@@ -1,0 +1,59 @@
+{
+  "name": "viscosity",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.4",
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "massive": "^4.7.1",
+    "nexmo": "^2.2.1",
+    "nodemailer": "^4.6.2",
+    "path": "^0.12.7",
+    "paypal-rest-sdk": "^1.8.1",
+    "react": "^16.2.0",
+    "react-defer-render": "^0.2.0",
+    "react-dom": "^16.2.0",
+    "react-google-maps": "^9.4.5",
+    "react-scripts": "^1.1.4",
+    "socket.io": "^2.0.4",
+    "webpack": "^3.11.0"
+  },
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node Server.js",
+    "server": "nodemon Server.js",
+    "test": "PORT=3001 react-scripts start",
+    "client": "cd client && PORT=3001 react-scripts start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "https://localhost:5007",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "Server.js",
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2105": "0.0.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "moment": "^2.21.0",
+    "nodemon": "^1.17.5",
+    "react-hotkey": "^0.7.0",
+    "style-loader": "^0.20.3",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VattyTheHut/Viscosity.git"
+  },
+  "author": "Vatekeh Corlon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VattyTheHut/Viscosity/issues"
+  },
+  "homepage": "https://github.com/VattyTheHut/Viscosity#readme"
+}

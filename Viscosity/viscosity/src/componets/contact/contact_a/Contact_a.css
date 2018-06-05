@@ -1,0 +1,77 @@
+.form-group input{
+  height: 37px;
+  width: 200px;
+  border-radius: 3.5px;
+  font-size: 18px;
+  line-height: 18px; 
+}.left-margin{
+  margin-left: 100px;
+}
+
+.validation {
+  display:none;
+  margin: 0 0 10px;
+  font-weight:400;
+  font-size:13px;
+  color: #DE5959;
+}
+.form-group {
+  overflow: hidden;
+  clear: both;
+  font-size: 18px;
+  line-height: 18px;
+  /* width: 196px; */
+}.form-group p{
+  padding: 5px;
+}.icon-case {
+  width: 35px;
+  float: left;
+  border-radius: 5px 0px 0px 5px;
+  background:#eeeeee;
+  height:42px;
+  position: relative;
+  text-align: center;
+  line-height:40px;
+}
+
+i {color:#555;} 
+textarea {resize: none;} 
+.select_input{
+  max-width: 500px;
+  min-width: 400px;
+  height: 40px;
+
+}
+
+.wrapper{
+  clear: both;
+  display: block;
+  padding-top: 20px;
+  color: #555;
+  
+}
+
+.wrapper .right, .wrapper .left{
+  float: left;
+  height: 80vh;
+  display: block;
+  position: relative;
+}
+.right{
+  width: 60%;
+  background-color: #fff;
+}.left{
+  width: 40%;
+  background-color: #F6F6F6;
+}
+
+.right-right, .right-left{
+  float: left;
+  margin-right: 5%;
+}
+
+.right-left div{
+  margin-bottom: 20px;
+}.right-right div{
+  margin-bottom: 20px;
+}

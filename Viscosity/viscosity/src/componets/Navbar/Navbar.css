@@ -1,0 +1,195 @@
+V1
+
+.v1 *{
+    box-sizing: border-box;
+  }
+  
+  .v1 {
+    position: absolute;
+    /* Later change the position so that it work ok with everthing  */
+    top: 0;
+    
+    width: 100%;
+    padding-top: 80px;
+    /* height: 1900px; */
+  }
+ 
+
+  /* .v1 li:hover{
+	  border-bottom: solid;
+	  animation-name: listBorderAnim;
+      animation-duration: .5s;
+  }
+
+  @keyframes listBorderAnim{
+	from {
+		width: 0px;
+		
+	}
+	to {
+		width: 250px
+	}
+  } */
+  
+  .v1 header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    color: #fff;
+    background-color: #2A4960;
+  }
+
+  .textlogo a{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 5%;
+    color: #fff;
+  }
+  
+  @supports (position: sticky) {
+    .v1 {
+      padding-top: 0;
+    }
+  
+    .v1 header {
+      position: sticky;
+    }
+  
+  }
+  
+  .v1 .navbar {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    transition: 0.5s ease;
+  }
+  
+  .v1 .navbar .nav {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+    margin-right: 5%;
+  }
+  
+  .v1 .navbar .nav .item {
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 300;
+    line-height: 80px;
+    margin-right: 20px;
+    transition: 0.5s ease;
+  }
+  
+  .v1 .navbar .nav .item .contact {
+    display: inline-block;
+    background-color: #ffffff;
+    height: 40px;
+    line-height: 30px;
+    padding: 5px;
+    border-radius: 2px;
+    transition: 0.5s ease;
+  }
+  
+  .v1 .navbar .nav .item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .v1 .navbar .nav .item a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.item:hover{
+  color: #EABC47;
+}
+
+
+/* Brackets go out */
+div.brackets a:before, div.brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+div.brackets a:before
+{
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+div.brackets a:after
+{
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+  
+  .v1 .navbar .logo {
+    float: left;
+    background-image: url("http://vpsmediagroup.com/assets/images/WhiteVPSLogo.png");
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5%;
+    width: 70px;
+    height: 70px;
+    transition: 0.5s ease;
+  }
+  
+  .v1 .navbar .logo img {
+    display: none;
+  }
+  
+  .v1 .scrolled {
+   transition: 0.5s ease;
+  }
+  
+  .v1 .scrolled.navbar {
+    height: 50px; 
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease;
+  
+  }
+  
+  .v1 .scrolled.navbar .nav .item {
+    line-height: 40px;
+    transition: 0.5s ease;
+  }
+  
+  .v1 .scrolled.navbar .nav .item .contact {
+    display: inline-block;
+    background-color: #ffffff;
+    height: 40px;
+    line-height: 30px;
+    padding: 5px;
+    border-radius: 2px;
+    transition: 0.5s ease;
+  }
+  
+  .v1 .scrolled.navbar .logo {
+    float: left;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5%;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://vpsmediagroup.com/assets/images/WhiteVPSLogo.png"); 
+    transition: 0.5s ease;
+  }
+

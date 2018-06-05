@@ -1,0 +1,38 @@
+#V1showcase{
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/23/06/81/230681ed53f1d39d9af91d567c322fbd.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    line-height: 1.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+
+#V1showcase h1{
+    font-size: 60px;
+}
+
+#V1showcase p{
+    font-size: 20px;
+    padding: 60px;
+}
+
+#V1showcase .V1button{
+    font-size: 18px;
+    border: #833B4D 1px solid;
+    padding: 10px;
+    border-radius: 5%;
+}
+#V1showcase .V1button:hover{
+    font-size: 18px;
+    color: white;
+    border: #833B4D 1px solid;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #833B4D;
+}

@@ -1,0 +1,376 @@
+
+/* Party Modal template down */ /* Party Modal template down */
+/* Party Modal template down */ /* Party Modal template down */
+/* Party Modal template down */ /* Party Modal template down */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900');
+ 
+
+
+/* iframe{
+  height: 60vh;
+  width: 110vh;
+  margin-top: 8%;
+} */
+
+
+.v3 iframe{
+  height: 60vh;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 20vh;
+}
+
+.v3 .a button{
+  font-size: 5vh;
+  color: #fff;
+  background-color: transparent;
+}
+
+.v3 .a button:hover{
+  font-size: 5vh;
+  color: #000;
+  background-color: #fff;
+}
+
+.modal{
+  color: #fff;
+}
+
+
+
+
+/*     margin-left: 120vh;
+    margin-top: 2vh; */
+
+.Modal-party .party {
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    text-align: center;
+    color: #5e5e5e;
+    
+}
+
+ .Modal-party .blur-here {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAkFBMVEX////u7u4jHyDt7e339/f6+vrx8fH5+fn09PQhHR4lISIAAAAeGhsjHiAjICElICEZFBXh4eE5NzgaFhfn5+cQDA1qaGm+vr6bmZrb29urqaqIhoc/PT5cWVqRkJEMBQfPzs8uKyzCwcJtbGx8enu0srOLiYpHRUZUUVLT0dJ/fn9ZVlcyMDGjoKFFQ0R1dHWj7jXpAAAL60lEQVR4nO2dDWOaPhPAJSgmIbwJ8a21qK2zuu7v9/92TxLUyoUNhbZGnmRdu7a3Iz8uHLlcDno92Dyn3Nw+lBg4sNUrGUKJIdThaUqghDuAEv16JXqzgBbQAlpAC2gBLaAFtIAW0AJ+F6BbC+hCvfVKdECopAIQKtEB65U0A4R6GwECkWaAtUr0hh233DTAIZRwKwBBqxiiQKLqLIFWMUSBRAWgBxoeDkDrayJQYlCvBEOR/s8o8bQr2akf6Fg7S9pFqSnBDZRoEmUlwpFd4x7A91XjwAUStX2rGLP4S5RAiQaA17iq+pNfC9hQCexsE0Cjh6gFtIDfBwglOgfYeQtaQAtoAe8LCCU6B9h5C94NEAaVlWFzuVX0rTYCxt+ipGqxASrpd7xpZ0lfKKg/TVesNlStydQp0VZG6geXXTa0gBbQAlpAC2gBLaAFtIAPDnhFhrce8IoMbz1gswwvSAQ1y/ACJc0yvEDJV2V4wXmryvCWJZoN0duVVGV4yxIVgDBFOsTY8/Bl09KofSFSktBSvpoST88bw8N8j5KBtlBQtSYDJOpXG6rWZG5W4mlKYBhdtSYDm83w6q6qvm9XZHibKYES91s2rAW066IPBwglOgfYeQtaQAv4SIBexSTk0QG14xw7lOzW3QCEFpRKnPWfBff9DgI6coh6m7fIjxmLuwjoOXj9uuKMIsRYBwFdnL19xIQiShCi1wNCkS8ChBLtnQyePfNUsrEI8e31gFCiyXJRkwzvzZvSkzxmwn4hDQLED0Uw3KUMbzLicnRSRoOI+JNC2KRlwzaAopPZghMkCFGIhI+Jk64BuvuUSTxCQ4Ii/ur+rW+PCrhhjEk8REhExQjFnQIc9majtMATVqSI/07+2reHBOwNp766P1AUCUQWr0++vyuAGWeCDyHlZSg/JI7XLcCpL10nLQDj7dLzOuZkSBohdfXJcRrOPcftlgWxz5TtFF/+S1qvWxbcyBEaEkojxPyDiz/TQx0BPPjy8hNBBGHx29DJPOcxr0HlGi9m9mfAhQwihAVZPJq6MrR3z6I/BgjTJE0yvG6hRfRfeBH55wT4niI1Ac3HEykjAd3jmdABYU++JsN7BSA8sta3gcQq8GTaVXxzBozTNPb98STBwnQKT5rwbMFLBpOLlLHsulvIqX+cAMc++RjPd5k8S67qnudkrsz1/UiRsjicN4Rq+g4QwdqBoIQzgCJYGcrDWZIkmVxz6h8l+vjUKceVRcjuZ08qlgXAcfpQZFCSaFSk7F2zZOGp3uym76uUf4z/zLAs5ZaDzClshj1X/Gj2svVV489PS6fv4Exclhc+TjuMKUXKwnf0k8k49/NY+EzGcz8+THbZ+WITZ9mdrfex+D2THocJn+Pni82s+M/n4+iAsK8/XaR8nJd4znL+4YtJNSWhCowEpD/6tZ458q4nhs1sPd2q30uPGiC1tsZif/tn5kojKa9kZJGyp3y+l0y3uTTNZSMsp+OXzQzjZDN9pXmMtEbifPEHKysXztE8QEfeF/BuTGIV8JWaiP04Hy3eDuNnzhnR+YIIoTTdi9vHaZgaCCgH4GTEmcCjGoGKb+OYp0guOQlEQElIyEK+WJ4xDAQUbe6nUbFiDQxYfKhol6r5KASkYopKEH9fS4ebGQkovsw5YyQictUTdp+gKAjkF/ERqFU1eBKIpM4XS6+YoJoH6DmbVUpoFFRcguJ7ySfGIQlDerIqsDKNCCX+W/KX2fd9AaX/XL5zQRFIfwGaYJK/CIumcEI4RMXtJIoYiv2dY5oFneL+lxw4ERQa3ZVNXYQk/73JDLSgmhjPU4ZIU0AZJAq/k7/OTsczCFBZ0EtGsfQcTS0oDLhi+R6LSKTYMGwQYBGYv/iql2FDQDmly59k4aSRXtR1M07kRaTdAq83YegfBnKu6hYLNV8DqCUzGxUpyxhDrskT3fnf0PhCuhdhwcyrDKMb5WaHsGHY+lCir4kMhUxvJJdbaHMDRunHcjiQBxgUX/TDXNET2LSz1LhIeUdhBHFbCwJ/OigtyhiWwt5XREA3AcbbXfk48Ch3XhddtAQk+bRXJjALMNnGLdyLaGwkN61dXjNmAW4+0naAfIyNtuA01cKfG5r4r/EeHscswF+c6DHEDY2QqdmAe97GguISXE2MBsQiUmrDJ3xMonSbCui+trxLsGdt7mkUYDZuC/ifNsU1DDDtPmA7J/OcmQNYsetUDNHmcYQC/FhKD3PjTKYqrVUL2KhIWTiZisXsWwBXG+VCy9FELWCzDK+MU5xzjvYvRcpukV5Xn8VpOcTtbhOE/dJP9TERczpSZZGye/lRAVgfRF4T8A76by3n2ig+iCi3dKyvCXi14LVRkbKD97z5apNq6ftSmewfPblnkTJ+ittN1RBBfz53BTnGFSnjFwTTEbcC8rfMvdw5YlSRsos3o5aA0o96XrF71LiFX9Gl3bbdmpMA5G9yA766uIq+mQMoh1bbNRlEGZ87arfJ3/Z23XVlG7+2vU8IRzpaqn0MBm5CcD08rdpZcGPj78p+Bg5RV1yEq7YXYYRCf+w5XjGDMQvQEyZsCyi3LoR8nDkmAsqfHjhC5LQhu2kj+e+ld9yJbxigs5TbsYO2nobko3mCPQMBXZyyVsmzYwvS+DAxzoIqw7vPadsRimgQBCn/eDFtI5DcY+EtZVWSvsnpNkC1QShfGJfClrPHZBsT0jyup+evhMyrAWFPrgHUXlRUETbDFyJpRy72MTubvGqH1m2AYYgitnJwVU8w7EnFepi2pVnv7O0Z3lNgk2zTIGjtZ4IgL/IwhmV4e0VtoLZL7dYmNPhJAQh7cv/Kl6Ws7mwJSBFf9EwFHOzzFvtkjnzM3xWrhwYC9tYirm8bVMSLY6rXRECZJmy827BoLN8JPlMt2MtG7eLeIOBP51IYEwF7c1/FPY0oiZioxf+dd8uYCdjb8uJefzOiDLUQI9MzhnmAqiRrJxxpsx1rci8+X3z20TxARTic+4wIa9zsawgjKA2XPZMtqD67B05pcLszjVaU+C+q36YCHttOXIZVO+9rWsBQ/n48TebeB1XfJh+x2nxf9jPiu2P+KRS/vEhFyToDKsvQ4mIryal9F2B9DW9dkfJgmhJ0eiTVke7076KkLpI/OP0qJKH4PqAp3ZQQDC5S9sY8pLRkwyCQoSI9wtILQOU9ZQUhnw5BCvsKC5YH3I8VKWernJDjU2MKvigikSrHks6yqD47AYYqTCb+Hhzpa4qUwUlyPG2Xc3mgy1V6TQksccUDPOLCSAwd0740YOK6YymXT8KLY87YyZhq2JKQUX8syyUy/NmTmmeXyUpaKPEFazLXFClLkzqLWFKc7vgRITx8fl8cXqa/XhfvzylPizulKrWLxBT7TT6YpLTqoh3GlCLlIjmb7VcxQ+pmQRCL+fYwXToY9/virzt5Go/4aV+GMC1fPanyGffTA5hYpFwC7HmbrR/LSuU09tlY0hXpTXnyPZytX96LMmwS++nrpKguufRwBhYpQyWz+SL2fZ++ztczB1+UyAtL9XuD2Xq6oL6f//cyyaqUmA4o/2Yz0RIxKvrHJ3OcEVXU3pcPRkiSfrUS0wFLm1tl+fLnr8VQ1JRob9gwH1BurRsUxSwDXNSgfxLiz8ddHOtdHg9w0Pv8jGV25izm6Q5w8ICA564PiuevlKZempIrHg1qKOCpbyUh/Rp8dMAGSiygBfxJQCjROcC7WVBLZjYqUq6NgL/kTcqNcrPam5j0IuWKNz6BVquk6p1QP6NEO0tXLToBiapHogGR2pe7VT5nG4jUb0a+/8MbPwGhjsd6eKMFtIAW0AJaQAtoAS2gBbwTYH3kZt+kfNc3KbvOv6PKYVE/9dmqAUtKKt+k7N6o5C9FyhetArCvN5nEq2lXSNSKXHOY9kpuLlJ2vuJNyl+l5AeLlIGIJtH9NylDiQd/k7JBy4YW0AJawP8PQCjROcDOW9ACWkALeF9AKHE3wO+abH+LkkZFynoaFUroaVS90lnL1n6LEi35rCvRztKPvEm5p9ZkQHyrKTGvSPkfSh5r2dACWkALaAEtoAW0gBbQAlpAC2gBuw/4P7+AMHEARQq3AAAAAElFTkSuQmCC");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+	content: "";
+  position: aboslute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+  filter: blur(20px);
+  transform: scale(1.4);
+} 
+
+.Modal-party .party__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.Modal-party .close--btn {
+    position: absolute;
+    top: -25px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, .2);
+    z-index: 10;
+}
+
+.Modal-party .close--btn i {
+    font-size: 40px;
+    font-weight: 700;
+    color: #eb1835;
+}
+
+.Modal-party .party__box-header {
+    background-image: url("https://pbs.twimg.com/media/C7cUFmLXUAAnZr_.jpg");
+    background-size: cover;
+    background-position: center 80%;
+    position: relative;
+    color: #fff;
+    height: 180px;
+}
+
+.Modal-party .party__text {
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: .6px;
+    text-shadow: 0px 3px 22px rgba(0, 0, 0, .5);
+}
+
+
+
+.Modal-party .party__box-info {
+    position: relative;
+    padding: 40px 0 75px;
+}
+
+.Modal-party .heading-secondary {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.Modal-party .heading-secondary span {
+  display: block;
+}
+
+.Modal-party .heading-secondary span:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.Modal-party span.party__offer,
+.Modal-party span.party__time {
+  font-weight: bold;
+}
+
+
+
+/* Button */
+.Modal-party .info--btn:link,
+.Modal-party .info--btn:visited { 
+    display: inline-block;
+    position: absolute;
+    left: 5%;
+    bottom: -32px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 90%;
+    background-image: linear-gradient(45deg, #ff487b 20%, #ff7147);
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, .2);
+    padding: 18px 50px;
+    border-radius: 100px;
+    transition: all .3s;
+    
+}
+
+.Modal-party .info--btn:hover,
+.Modal-party .info--btn:active{
+    color: #fff;
+/*     background-image: linear-gradient(225deg, #ff487b 40%, #ff7147); */
+    width: 98%;
+    left: 1%;
+    bottom: -20px;
+}
+
+.Modal a {
+  text-decoration: none !important;
+}
+
+
+/* login template *//* login template */
+/* login template *//* login template */
+/* login template *//* login template */
+/* login template *//* login template */
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login-form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.login-form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.login-form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.login-form button:hover,.login-form button:active,.login-form button:focus {
+  background: #43A047;
+}
+.login-form .login-message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.login-form .login-message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.login-form .login-register-form {
+  display: none;
+}
+.login-container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.login-container:before, .login-container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.login-container .login-info {
+  margin: 50px auto;
+  text-align: center;
+}
+.login-container .login-info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.login-container .login-info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.login-container .login-info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.login-container .login-info span .fa {
+  color: #EF3B3A;
+}
+
+
+.sample-show-hide {
+  transition: all linear 0.5s;
+}
+.sample-show-hide.ng-hide {
+  opacity: 0;
+}
+
+.Body {
+  /*background: #76b852; 
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);*/
+  background-image: url('https://handheldcamera12.files.wordpress.com/2013/02/school-of-athens-detail-from-right-hand-side-showing-diogenes-on-the-steps-and-euclid-1511.jpg');
+  height: 50vh;
+  background-repeat: no-repeat;
+
+
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.small-img{
+    width: 150px;
+    height: 150px;
+  }
+
+.BBBody{
+  background-image: url('http://www.oceansbridge.com/paintings/artists/jan2012/Jean-Baptiste-Simeon-Chardin2/Jean-Baptiste-Simeon-Chardin-xx-The-Attributes-of-Science-xx-Musee-Jacquemart-Andre.jpg');
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin: 0px;
+
+
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  */
+
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000000;
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+  margin-left: 0%;
+  margin-top: 10%;
+  padding: 0px 20px 13px 20px;
+  border-radius: 10px;
+
+
+
+
+    /* background: #fff; */
+    /* background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999); */
+}
+
+.close {
+  line-height: 25px;
+  position: fixed;
+  right: 13px;
+  /* text-align: center; */
+  top: 25px;
+  width: 60px;    
+}

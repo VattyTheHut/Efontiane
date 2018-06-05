@@ -1,0 +1,54 @@
+.Converg span{
+    color:#31495E;
+}
+
+.Converg{
+    z-index: 3;
+    position: absolute;
+    top: 60%;
+    right: 0px;
+    left: 0px;
+    overflow: hidden;
+    padding: 30px;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 4px;
+    background-color: #090909;
+    color: #fff;
+    opacity: 0.8;
+}
+.Converg h1{
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    padding: 10px;
+}
+.Converg div{
+    margin-left: 2%;   
+}
+.Converg div input[type=text], 
+.Converg div input[type=submit]{
+    float: left;
+    margin-right: 10px;
+    padding: 10px;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 20px;
+    width: 21%;
+}
+.Converg input{
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.Converg h1{
+    padding-bottom: 30px;
+}
+
+#form_button{
+    background-color: #31495E;
+    border-color: #31495E;
+    color: #fff;
+    font-weight: 500;
+}

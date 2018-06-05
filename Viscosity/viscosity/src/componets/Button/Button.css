@@ -1,0 +1,79 @@
+
+/* colors of some SM sites */
+
+
+button{
+    background-color: inherit;
+}
+
+.Button button:hover{
+    background-color: black;
+    color: #fff;
+} 
+
+.fb-c-s{background-color: #3E5999;}
+.ig-c-s{background-color: #fb3958;}
+.git-c-s{background-color: #6cc644;}
+.sc-c-s{background-color: #ED542A;}
+.pp-c-s{background-color: #fff}
+
+
+
+.fb-c{border-color: #3E5999; border-width: 2px; }
+.goog-c{border-color: #d62d20; border-width: 2px;}
+.tw-c{border-color: #00aced; border-width: 2px;}
+.pp-c{border-color: #000}
+
+
+
+.emailer{
+    padding: 10px;
+}
+
+/* shape of the button */
+
+.square{
+    border-radius: 0%;
+}
+.round{
+    border-radius: 40px;
+}
+.round-e{
+    border-radius: 15px;
+}
+.circle{
+    border-radius: 50% !important;
+    height: 25px !important;
+    width: 25px !important;
+}
+
+
+/* length of buttons below */
+
+
+.sh{
+    width: 10px;
+    font-size: 5px;
+}
+.l-md{
+    width: 60px;
+    font-size: 10px;
+}
+.tl{
+    width: 110px;
+    font-size: 15px;
+}
+/* size of buttons below */
+
+.sm{
+    height: 20px;
+}
+.md{
+    height: 50px;
+}
+.bg{
+    height: 80px;
+    
+}
+
+

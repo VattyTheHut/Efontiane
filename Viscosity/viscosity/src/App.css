@@ -1,0 +1,19 @@
+
+
+*, body{
+  padding: 0%;
+  margin: 0%;
+}
+
+a {
+  text-decoration: none !important;
+  color: #EABC47;
+}
+li{
+  float:left;
+}
+
+ul{
+  list-style-type:none
+}
+
