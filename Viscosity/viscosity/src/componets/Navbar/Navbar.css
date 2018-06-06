@@ -5,12 +5,13 @@ V1
   }
   
   .v1 {
-    position: absolute;
+    position: relative;
     /* Later change the position so that it work ok with everthing  */
     top: 0;
     
     width: 100%;
     padding-top: 80px;
+    clear: both;
     /* height: 1900px; */
   }
  

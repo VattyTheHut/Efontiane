@@ -1,29 +1,55 @@
-.form-group input{
+
+.contact-background{
+  height: 4vh;
+  padding: 10%;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: center;
+  background-position: top;
+  background-attachment: fixed;
+  background-image: url("https://media.glassdoor.com/l/72/68/6e/20/hired-nyc.jpg")
+}
+
+.Contact_a .form-group input{
   height: 37px;
   width: 200px;
   border-radius: 3.5px;
   font-size: 18px;
   line-height: 18px; 
-}.left-margin{
-  margin-left: 100px;
+}.Contact_a button{
+  font-size: 30px;
+  line-height: 43px;
+  font-weight: 400;
+  padding: 5%;
+  border-radius: 10px;
+  border-color: #fff;
+  border-width: thick;
+  color: #fff;
+  background-color: #31495E;
 }
 
-.validation {
+
+.Contact_a .left-margin{
+  /* margin-left: 100px; */
+}
+
+.Contact_a .validation {
   display:none;
   margin: 0 0 10px;
   font-weight:400;
   font-size:13px;
   color: #DE5959;
 }
-.form-group {
+.Contact_a .form-group {
   overflow: hidden;
   clear: both;
   font-size: 18px;
   line-height: 18px;
   /* width: 196px; */
-}.form-group p{
+}.Contact_a .form-group p{
   padding: 5px;
-}.icon-case {
+}.Contact_a .icon-case {
   width: 35px;
   float: left;
   border-radius: 5px 0px 0px 5px;
@@ -34,44 +60,68 @@
   line-height:40px;
 }
 
-i {color:#555;} 
-textarea {resize: none;} 
-.select_input{
+ .Contact_a i {color:#555;} 
+ .Contact_a textarea {resize: none;} 
+ .select_input{
   max-width: 500px;
   min-width: 400px;
   height: 40px;
-
 }
-
-.wrapper{
+.Contact_a .wrapper{
   clear: both;
-  display: block;
-  padding-top: 20px;
   color: #555;
-  
 }
-
-.wrapper .right, .wrapper .left{
+ .wrapper .right, .wrapper .left{
   float: left;
-  height: 80vh;
-  display: block;
+  height: 100%;
   position: relative;
 }
 .right{
-  width: 60%;
+  width: 60vw;
+  padding: 20px;
   background-color: #fff;
-}.left{
-  width: 40%;
+  clear: left;
+}.right div{
+  padding: 5px;
+}
+.left{
+  width: 40vw;
   background-color: #F6F6F6;
 }
 
-.right-right, .right-left{
+.Contact_a .right-right, .Contact_a .right-left{
   float: left;
-  margin-right: 5%;
+  /* margin-right: 5%; */
 }
 
-.right-left div{
+ .right-left div, .right-right div{
   margin-bottom: 20px;
-}.right-right div{
-  margin-bottom: 20px;
+} 
+
+.left img{
+  height: 15%;
+  width: 15%;
+  float: left;
+}.contact-float{
+  padding: 30px;
+  color: #666;
+}.contact-float h3{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+}.contact-float p{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+}.contact-float div{
+  padding: 2%;
+  margin-left: 20%; 
+}.follow-content div:first-child{
+  float: left;
+}
+
+.content-wrapper{
+  clear: both;
+  display: block;
+  position: relative;
 }

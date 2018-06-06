@@ -48,10 +48,11 @@ export default withGoogleMap(Maps);
 
 
 // this is an example of how you would call a <Maps> componet from the Maps class
-{ /* <Maps zoom={8} 
+<Maps 
+zoom={8} 
 center={{ lat: 40.7128, lng: -74.0060 }} // add js object with keys latitude and logitude to center the map for example ==> { lat: 40.7128, lng: -74.0060 } Newyork
-containerElement = {<div style={this.state.style.full} />}
-mapElement= {<div style={{ height: `100%` }} />}/> */}
+containerElement = {<div style={this.state.style.full} />
+mapElement= {<div style={{ height: `100%` }} />}/> 
 // the example below will render a google map that ___
 
 

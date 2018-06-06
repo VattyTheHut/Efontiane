@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import{
+      Route,
+      Link, 
+      BrowserRouter as Router,
+} from "react-router-dom"
 
 import Footer from './componets/Footer/Footer.js'
 // import Comingsoon from './componets/Comingsoon/Comingsoon.js'
@@ -10,7 +15,7 @@ import Footer from './componets/Footer/Footer.js'
 // import Modal 4from "./componets/Modal/Modal.js"
 // import Checkout_v1 from "./componets/Paypal/Checkout_v1/Checkout_v1.js"
 // import Checkout_v2 from "./componets/Paypal/Checkout_v2/Checkout_v2.js"
-// import Contact_a from "./componets/contact/contact_a/Contact_a.js"
+import Contact_a from "./componets/contact/contact_a/Contact_a.js"
  // import Button from "./componets/Button/Button.js"
 // import Splitscreenslider_v2 from "./componets/Splitscreenslider/Splitscreenslider_v2/Splitscreenslider_v2.js"
 import './App.css';
@@ -21,16 +26,40 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-           <Navbar navbar="v1"/>
-           <Videoplug />
-           <Footer />  
+           <Router>
+             <div>
+              <Route exact path="/" render={()=> (
+                <div>
+                  <Navbar navbar="v1"/>
+                  <Videoplug />
+                  <Footer />
+                </div>
+              )} />
+              <Route path="/about" render={()=> (
+                <div>
+                  <Navbar navbar="v1"/>
+                  <Parallax_a />
+                  <Footer />
+                </div>
+              )} />
+              <Route path="/contact" render={()=> (
+                <div>
+                  <Navbar navbar="v1"/>
+                  <Contact_a />
+                  <Footer />
+                </div>
+              )} />
 
-           {/* <Navbar navbar="v1"/>
-          <Parallax_a />
-          <Footer />  */}
+              <Route path="/blog" render={()=> (
+                <div>
+                  <Navbar navbar="v1"/>
+                  {/* <Comingsoon /> */}
+                  <Footer />
+                </div>
+              )} />
 
-          {/* <Navbar navbar="v1"/> */}
-          {/* <Contact_a /> */}
+             </div>
+           </Router>
       </div>
     );
   }
