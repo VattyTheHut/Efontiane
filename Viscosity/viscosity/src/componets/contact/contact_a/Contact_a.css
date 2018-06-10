@@ -11,6 +11,13 @@
   background-image: url("https://media.glassdoor.com/l/72/68/6e/20/hired-nyc.jpg")
 }
 
+.Contact_a{
+  display: block;
+  position: relative;
+  clear: both;
+}
+
+
 .Contact_a .form-group input{
   height: 37px;
   width: 200px;
@@ -27,11 +34,6 @@
   border-width: thick;
   color: #fff;
   background-color: #31495E;
-}
-
-
-.Contact_a .left-margin{
-  /* margin-left: 100px; */
 }
 
 .Contact_a .validation {

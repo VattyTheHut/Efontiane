@@ -1,58 +1,56 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import { withGoogleMap, GoogleMap, Marker } from "react-google-maps"
-import "./Maps.css"
+import React, { Component } from 'react';
+import GoogleMapReact from 'google-map-react';
+import Button from "/Users/vatekehcorlon/ef/Viscosity/viscosity/src/componets/Button/Button.js"
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
+class Maps extends Component {
+  static defaultProps = {
+    center: {
+      lat: 39.683723,
+      lng: -75.749657
+    },
+    zoom: 12
+  };
+
+  render() {
+    return (
+      // Important! Always set the container height explicitly
+      <div style={{ height: '40vh', 
+                    width: '100%',
+                    clear: 'both',
+                    position: 'relative',
+                    display: 'block',
+                    zIndex: '1'
+                    
+                    
+                    }}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: "AIzaSyBKMMq0Jg4wt58KlakG8aE_TcGIuIjGVCc"}}
+          defaultCenter={this.props.center}
+          defaultZoom={this.props.zoom}
+        >
+          {/* <AnyReactComponent
+            lat={39.683723}
+            lng={-75.749657}
+            text={'Newwark Delaware'}
+          /> */}
+
+          <Button text="" 
+               color="fb-c"
+               colorSolid="sc-c-s"
+               fas="sc"
+               shape="circle" 
+               length="l-md" 
+               size="sm"
+               lat={39.683723}
+                lng={-75.749657}
+            /> 
 
 
-class Maps extends React.Component{
-
-
-    constructor(){
-        super()
-        this.state = {
-            styles: {
-                full: { height: `3vh`, width: `100%` },
-                third: { height: `400px`, width: `300px` }
-            }
-
-        }
-
-        // setStyle(style){
-        //     this.setState({mapStyle: this.state.styles[full]});
-        // }
-    }
-
-    render(){
-         const apiKey = "AIzaSyBKMMq0Jg4wt58KlakG8aE_TcGIuIjGVCc        "
-         const apiREST = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`
-         let markers =  this.props.markers || []     
-        return (
-            <div className="Maps">
-                <GoogleMap
-                    defaultZoom={this.props.zoom || 4}
-                    defaultCenter={this.props.center}
-                >
-                {markers.map((markers, index => (
-                    <Marker {...markers}/>
-                )
-
-                ))}
-                </GoogleMap>
-            </div>
-        );
-    }
+        </GoogleMapReact>
+      </div>
+    );
+  }
 }
 
-
-export default withGoogleMap(Maps); 
-
-
-// this is an example of how you would call a <Maps> componet from the Maps class
-<Maps 
-zoom={8} 
-center={{ lat: 40.7128, lng: -74.0060 }} // add js object with keys latitude and logitude to center the map for example ==> { lat: 40.7128, lng: -74.0060 } Newyork
-containerElement = {<div style={this.state.style.full} />
-mapElement= {<div style={{ height: `100%` }} />}/> 
-// the example below will render a google map that ___
-
-
+export default Maps;

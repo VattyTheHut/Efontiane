@@ -1,18 +1,51 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import Converg from "/Users/vatekehcorlon/ef/Viscosity/viscosity/src/componets/Converg/Converg.js"
 import './Videoplug.css';
 
-
 class Videoplug extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
+    }
+    this.onSubmit = this.onSubmit.bind(this);
+		this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
+  handleInputChange(event) {
+    console.log("HIC on")
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+    this.setState({[name]: value});
+    console.log('touch');
+  }
+  onSubmit() {
+    console.log(this.state)
+    axios({
+      method: 'post',
+      url: 'http://127.0.0.1:3001/consultation',
+      data: this.state,
+       
+    })
+    .then(response => { 
+      console.log(response)
+      this.setState({email: "", subject: "", name: "", message: ""})
+    })
+    .catch(error => {
+        console.log(error.response)
+    });
+}
   render() {
     return (
       <div className="Videoplug">
    <div className="videoplug">
       <header className="v-header container">
          <div className="fullscreen-video-wrap">
-            {/* 
-            <video src="splashIntro.mp4" type="video/mp4" loop="true" autoPlay></video>
-            */}
             <video src="https://production.cdmycdn.com/assets/marketing-pages/intensives/bws/coding-scenes-9a2031e8142b40bdb5d936d5eef33dfa.mp4" allowFullScreen muted type="video/mp4" autoPlay="true" loop="true"></video>
          </div>
          <div className="header-overlay"></div>
@@ -73,16 +106,16 @@ class Videoplug extends Component {
             <div className="wrapper">
                <h1>GET A FREE CONSULTATION</h1>
                <h2><i className="fas fa fa-phone"></i>302-669-5069</h2>
-               <form className="cf">
+               <form action="/consultation" method="POST" className="cf">
                   <div className="half left cf">
-                     <input type="text" id="input-name" placeholder="Name*" />
-                     <input type="email" id="input-email" placeholder="Email address*" />
-                     <input type="text" id="input-subject" placeholder="Subject*" />
+                     <input onChange={this.handleInputChange} value={this.state.name} name="name" type="text" id="input-name" placeholder="Name*" required/>
+                     <input onChange={this.handleInputChange} value={this.state.email} type="email" id="input-email" name="email" placeholder="Email address*" required/>
+                     <input onChange={this.handleInputChange} value={this.state.subject} type="text" id="input-subject" name="subject" placeholder="Subject*" required/>
                   </div>
                   <div className="half right cf">
-                     <textarea name="message" type="text" id="input-message" placeholder="Message*" ></textarea>
+                     <textarea onChange={this.handleInputChange} value={this.state.message} name="message" type="text" id="input-message" placeholder="Message*" required></textarea>
                   </div>
-                  <input type="submit" value="Submit" id="input-submit" />
+                  <input onClick={this.onSubmit} type="submit" placeholder="Submit" id="input-submit" />
                </form>
             </div>
          </div>
