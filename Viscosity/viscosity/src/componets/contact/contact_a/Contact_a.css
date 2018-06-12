@@ -1,12 +1,14 @@
 
 .contact-background{
-  height: 4vh;
+  height: 1vh;
   padding: 10%;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
   text-align: center;
-  background-position: top;
+  background-position-y: -25vh;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   background-image: url("https://media.glassdoor.com/l/72/68/6e/20/hired-nyc.jpg")
 }

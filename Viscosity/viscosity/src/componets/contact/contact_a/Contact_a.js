@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import baseurl from "../../Utlil/Util.js"
 import './Contact_a.css';
 
 class Contact_a extends Component {
@@ -29,7 +30,7 @@ class Contact_a extends Component {
     console.log(this.state)
     axios({
       method: 'post',
-      url: 'http://127.0.0.1:3001/contact',
+      url: `${baseurl}/contact`,
       data: this.state,
     }).then(response => { 
       console.log(response)
@@ -98,21 +99,21 @@ class Contact_a extends Component {
             <div className="left">
                <div className="content-wrapper">
                   <div className="contact-float">
-                     <img src="https://cdn1.iconfinder.com/data/icons/us-states-maps-1/65/Delaware-256.png"/>
+                     <img alt="delaware img icon" src="https://cdn1.iconfinder.com/data/icons/us-states-maps-1/65/Delaware-256.png"/>
                      <div>
                         <h3>ADDRESS</h3>
                         <p>45 Eisenhower Drive, Suite 520<br /> Paramus, NJ 07652</p>
                      </div>
                   </div>
                   <div className="contact-float">
-                     <img src="https://www.hollyparkschool.co.uk/wp-content/uploads/2013/01/phone.png" />
+                     <img alt="phone img icon" src="https://www.hollyparkschool.co.uk/wp-content/uploads/2013/01/phone.png" />
                      <div>
                         <h3>PHONE</h3>
                         <p>201-448-9010</p>
                      </div>
                   </div>
                   <div className="contact-float">
-                     <img src="https://cdn4.iconfinder.com/data/icons/dot/256/email_mail_post_letter_stamp.png" />
+                     <img alt="email img icon" src="https://cdn4.iconfinder.com/data/icons/dot/256/email_mail_post_letter_stamp.png" />
                      <div>
                         <h3>EMAIL</h3>
                         <p>contact@smartsites.com</p>
@@ -122,21 +123,21 @@ class Contact_a extends Component {
                   <div className="follow-content">
                      <div>
                         <div className="contact-float">
-                           <img src="https://cdn1.iconfinder.com/data/icons/us-states-maps-1/65/Delaware-256.png"/>
+                           <img alt="delaware img icon" src="https://cdn1.iconfinder.com/data/icons/us-states-maps-1/65/Delaware-256.png"/>
                            <div>
                               <h3>LINK US</h3>
                               <p>to stay in touch!</p>
                            </div>
                         </div>
                         <div className="contact-float">
-                           <img src="https://www.hollyparkschool.co.uk/wp-content/uploads/2013/01/phone.png" />
+                           <img alt="phone img icon" src="https://www.hollyparkschool.co.uk/wp-content/uploads/2013/01/phone.png" />
                            <div>
                               <h3>FOLLOW US</h3>
                               <p>get the latest!</p>
                            </div>
                         </div>
                         <div className="contact-float">
-                           <img src="https://cdn4.iconfinder.com/data/icons/dot/256/email_mail_post_letter_stamp.png" />
+                           <img alt="email img icon" src="https://cdn4.iconfinder.com/data/icons/dot/256/email_mail_post_letter_stamp.png" />
                            <div>
                               <h3>ADD US</h3>
                               <p>to your Circle!</p>
@@ -146,21 +147,21 @@ class Contact_a extends Component {
 
                      <div>
                         <div className="contact-float">
-                           <img src="https://cdn1.iconfinder.com/data/icons/us-states-maps-1/65/Delaware-256.png"/>
+                           <img alt="delaware img icon"src="https://cdn1.iconfinder.com/data/icons/us-states-maps-1/65/Delaware-256.png"/>
                            <div>
                               <h3>PIN US</h3>
                               <p>recent photos!</p>
                            </div>
                         </div>
                         <div className="contact-float">
-                           <img src="https://www.hollyparkschool.co.uk/wp-content/uploads/2013/01/phone.png" />
+                           <img alt="phone img icon"src="https://www.hollyparkschool.co.uk/wp-content/uploads/2013/01/phone.png" />
                            <div>
                               <h3>SUBSCRIBE</h3>
                               <p>to our feed!</p>
                            </div>
                         </div>
                         <div className="contact-float">
-                           <img src="https://cdn4.iconfinder.com/data/icons/dot/256/email_mail_post_letter_stamp.png" />
+                           <img alt="email img icon"src="https://cdn4.iconfinder.com/data/icons/dot/256/email_mail_post_letter_stamp.png" />
                            <div>
                               <h3>CONNECT US</h3>
                               <p>company & industry news!</p>

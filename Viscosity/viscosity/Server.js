@@ -1,12 +1,11 @@
+    require('dotenv').config()
 
     const express = require('express');
     const bodyParser = require('body-parser');
     const cors = require('cors');
     const path = require('path')
-    let port = 3001;
     const app = express();
     const nodemailer = require('nodemailer');
-
 
     app.use(cors())
     app.use(express.static(path.join(__dirname, 'client/public')));
@@ -17,12 +16,12 @@
     //console.log(JSON.stringify(req.body))
 
     let transporter = nodemailer.createTransport({
-        service: 'gmail',
-        secure: false,
-        port: 25,
+        service: process.env.NODEMAILER_SERVICE,
+        secure: process.env.NODEMAILER_SECURE,
+        port: process.env.NODEMAILER_PORT,
         auth:{
-            user: "corlonprime.v@gmail.com",
-            pass: "Zelda64sixfour"
+            user: process.env.NODEMAILER_USER,
+            pass: process.env.NODEMAILER_PWS
         },
         tis: {
             rejectUnauthorized: false,
@@ -48,7 +47,6 @@
             console.log(info);  
         })
     });
-
 
     app.post('/consultation', (req, res, next) => {
        let HelperOptions = {
@@ -97,7 +95,8 @@
 
 
 
-    app.listen(port || process.env.PORT, () => {
-        console.log("resonating on port " + port)
+    app.listen(process.env.PORT, () => {
+        console.log("resonating on port " + process.env.PORT)
+        
         
     })

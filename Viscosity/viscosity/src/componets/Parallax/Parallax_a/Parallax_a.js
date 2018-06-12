@@ -140,12 +140,12 @@ class Parallax_a extends Component {
       </div>
       <div className="code-logos">
          <div>
-            <img className="react-img" src="https://raw.githubusercontent.com/babel/logo/master/babel.png"/>
-            <img className="react-img"src="https://www.netapp.com/us/media/2x-AWS.png"/>
+            <img alt="babel(ES6) img icon" className="react-img" src={require("../../../Imgs/babel-logo.png")}/>
+            <img alt="Amazon Web Service logo img icon" className="react-img" src={require("../../../Imgs/AWS-logo.png")}/>
          </div>
          <div>
-            <img className="react-img" src="http://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png"/>
-            <img className="react-img" src="https://objectpartners.com/wp-content/uploads/2015/02/mongodb-logo.png"/>
+            <img alt="React.js img icon" className="react-img" src={require("../../../Imgs/React_logo.png")}/>
+            <img alt="Mongodb img icon" className="react-img" src={require("../../../Imgs/mongodb-logo.png")}/>
          </div>
       </div>
    </section>

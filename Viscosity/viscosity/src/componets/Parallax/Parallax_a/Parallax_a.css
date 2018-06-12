@@ -28,16 +28,15 @@
   
   .pimg1{
     /* background-position: right; */
-    background-image:url('https://scontent.fphl2-4.fna.fbcdn.net/v/t1.0-9/32978819_1902531760038353_7193617084570402816_o.jpg?_nc_cat=0&oh=12b97ef4c94f74dd4f34788c83146ec7&oe=5B7AF8BD');
+    background-image:url('../../../Imgs/pimg1.jpg');
     min-height:70vh;
   }
-  
   .pimg2{
-    background-image:url('  https://scontent.fphl2-4.fna.fbcdn.net/v/t31.0-8/21055107_1793788494246014_1248524119716781344_o.jpg?_nc_cat=0&oh=62eddc0c0e5202ae6eee9130526fd240&oe=5BBD857B');
+    background-image:url('../../../Imgs/pimg2.jpg');
     min-height:400px;
   }
   .pimg3{
-    background-image:url('https://scontent.fphl2-4.fna.fbcdn.net/v/t1.0-9/20799442_1965655877011655_1838275667489920564_n.jpg?_nc_cat=0&oh=25507adcf93741a7875727ff75468379&oe=5B78D123');
+    background-image:url('../../../Imgs/tech-logo.jpg');
     min-height:400px;
   }
   

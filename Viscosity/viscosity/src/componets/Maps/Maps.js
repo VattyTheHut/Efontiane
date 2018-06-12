@@ -1,7 +1,15 @@
+
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import Button from "/Users/vatekehcorlon/ef/Viscosity/viscosity/src/componets/Button/Button.js"
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import "dotenv/config";
+import Button from "../Button/Button.js"
+import dotenv from 'dotenv'
+dotenv.config()
+// const AnyReactComponent = ({ text }) => <div>{text}</div>;
+require('dotenv').config()
+
+console.log(process.env.GOOGLE_MAPS_API)
+
 
 class Maps extends Component {
   static defaultProps = {
@@ -25,7 +33,7 @@ class Maps extends Component {
                     
                     }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyBKMMq0Jg4wt58KlakG8aE_TcGIuIjGVCc"}}
+          bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_API}}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
@@ -43,7 +51,7 @@ class Maps extends Component {
                length="l-md" 
                size="sm"
                lat={39.683723}
-                lng={-75.749657}
+              lng={-75.749657}
             /> 
 
 

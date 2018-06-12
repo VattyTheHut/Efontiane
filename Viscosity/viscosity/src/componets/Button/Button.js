@@ -29,6 +29,7 @@ class Button extends Component {
             git: `fab fa fa-github ${faSize}`,
             ig: `fab fa fa-instagram ${faSize}`,
             sc: `fab fa fa-soundcloud ${faSize}`,
+            mp: `fas fa fa-map-marker-alt ${faSize}`,
 
             // Tools 
             plus: `far fa fa-plus ${faSize}`,
@@ -37,7 +38,7 @@ class Button extends Component {
             ell : `fas fa fa-ellipsis-h ${faSize}`
         }
 
-        console.log('working in the fas')
+        
         return fas[fa];
     }
 

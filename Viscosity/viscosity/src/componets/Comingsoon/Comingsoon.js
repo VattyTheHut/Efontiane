@@ -5,29 +5,29 @@ import { $ } from 'jquery';
 
 class Comingsoon extends React.Component{
     render(){
-        window['jQuery'] = window['$'] = $;
+        // window['jQuery'] = window['$'] = $;
 
 
-        $(document).ready(() => {   
-            // Get the date
-            function e() {
-                var e = new Date;
-                e.setDate(e.getDate() + 20);
+        // $(document).ready(() => {   
+        //     // Get the date
+        //     function e() {
+        //         var e = new Date;
+        //         e.setDate(e.getDate() + 20);
           
-                var dd = e.getDate();
-                var mm = e.getMonth() + 1;
-                var y = e.getFullYear();
+        //         var dd = e.getDate();
+        //         var mm = e.getMonth() + 1;
+        //         var y = e.getFullYear();
           
-                var futureFormattedDate = mm + "/" + dd + "/" + y + ' 12:00:00';
+        //         var futureFormattedDate = mm + "/" + dd + "/" + y + ' 12:00:00';
           
-                return futureFormattedDate;
-            }
+        //         return futureFormattedDate;
+        //     }
           
-            $('.countdown').downCount({
-                date: e(),
-                offset: -4
-            });
-          });
+        //     $('.countdown').downCount({
+        //         date: e(),
+        //         offset: -4
+        //     });
+        //   });
 
 
         return(

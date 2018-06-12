@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from "axios";
-import '/Users/vatekehcorlon/ef/Viscosity/viscosity/src/componets/Converg/ Converg.css';
+
+import baseurl from "../Utlil/Util.js"
+import './ Converg.css';
 
 
 class Converg extends Component {
@@ -29,7 +31,7 @@ class Converg extends Component {
     // if(this.state.name ||)
     axios({
       method: 'post',
-      url: 'http://127.0.0.1:3001/send',
+      url: `${baseurl}/send`,
       data: this.state,
     })
     .then(response => { 

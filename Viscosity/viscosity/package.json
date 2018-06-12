@@ -12,7 +12,8 @@
     "express": "^4.16.3",
     "google-map-react": "^1.0.3",
     "jquery": "^3.3.1",
-    "massive": "^4.7.1",
+    "massive": "^4.8.3",
+    "mongodb": "^3.0.10",
     "nodemailer": "^4.6.2",
     "path": "^0.12.7",
     "react": "^16.2.0",
@@ -30,19 +31,19 @@
     "server": "nodemon Server.js ",
     "webpack": "webpack",
     "test": " react-scripts start",
-    "client": " react-scripts start",
+    "client": "PORT=4001 react-scripts start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "eject": "react-scripts eject"
   },
   "proxy": {
     "/Converg": {
-      "target": "http://127.0.0.1:3001"
+      "target": "http://127.0.0.1:5001"
     },
     "/postcontact": {
-      "target": "http://127.0.0.1:3001"
+      "target": "http://127.0.0.1:5001"
     },
     "/consultation": {
-      "target": "http://127.0.0.1:3001"
+      "target": "http://127.0.0.1:5001"
     }
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
@@ -54,10 +55,13 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.11",
+    "dotenv": "^6.0.0",
+    "file-loader": "^1.1.11",
     "moment": "^2.21.0",
     "nodemon": "^1.17.5",
     "react-hotkey": "^0.7.0",
-    "style-loader": "^0.20.3"
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1"
   },
   "repository": {
     "type": "git",

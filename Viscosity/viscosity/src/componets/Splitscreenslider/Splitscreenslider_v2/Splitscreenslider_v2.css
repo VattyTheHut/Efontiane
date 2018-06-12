@@ -1,150 +1,85 @@
-:root {
-    --container-bg-color: #333;
-    --left-bg-color: rgba(223, 39, 39, 0.7);
-    --left-button-hover-color: rgba(161, 11, 11, 0.3);
-    --right-bg-color: rgba(43, 43, 43, 0.8);
-    --right-button-hover-color: rgba(92, 92, 92, 0.3);
-    --hover-width: 75%;
-    --other-width: 25%;
-    --speed: 1000ms;
-  }
-  
-  /* html, body {
-    padding:0;
-    margin:0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-  } */
+.Splitscreenslider_v2{
+  direction: rtl;
+}
 
-  .Splitscreenslider_v2 {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-  }
-  
-  h1 {
-    font-size: 4rem;
-    color: black;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-  }
+.split-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 
-  .button {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    height: 2.5rem;
-    padding-top: 1.3rem;
-    width: 15rem;
-    text-align: center;
-    color: grey;
-    border: black solid 0.2rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    transform: translateX(-50%);
-  }
+.split-item {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   
-  .split.left .button:hover {
-    background-color: var(--left-button-hover-color);
-    border-color: var(--left-button-hover-color);
-  }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   
-  .split.right .button:hover {
-    background-color: var(--right-button-hover-color);
-    border-color: var(--right-button-hover-color);
-  }
+  width: 50%;
+  padding: 3em 5em 6em 5em;
+}
+
+.split-right {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
   
-  .container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: var(--container-bg-color);
-  }
-  
-  .split {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .split.left {
-    left:0;
-    background: url('https://image.ibb.co/m56Czw/designer.jpg') center center no-repeat;
-    background-size: cover;
-  }
-  
-  .split.left:before {
-    position:absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: var(--left-bg-color);
-  }
-  
-  .split.right {
-    right:0;
-    background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
-    background-size: cover;
-  }
-  
-  .split.right:before {
-    position:absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: var(--right-bg-color);
-  }
-  
-  .split.left, .split.right, .split.right:before, .split.left:before {
-    transition: var(--speed) all ease-in-out;
-  }
-  
-  .hover-left .left {
-    width: var(--hover-width);
-  }
-  
-  .hover-left .right {
-    width: var(--other-width);
-  }
-  
-  .hover-left .right:before {
-    z-index: 2;
-  }
-  
-  
-  .hover-right .right {
-    width: var(--hover-width);
-  }
-  
-  .hover-right .left {
-    width: var(--other-width);
-  }
-  
-  .hover-right .left:before {
-    z-index: 2;
-  }
-  
-  @media(max-width: 800px) {
-    h1 {
-      font-size: 2rem;
-    }
-  
-    .button {
-      width: 12rem;
-    }
-  }
-  
-  @media(max-height: 700px) {
-    .button {
-      top: 70%;
-    }
-  }
+  color: #7b5a9e;
+  background: #fff;
+}
+
+.split-left {
+  background: #7b5a9e;
+  color: #fff; 
+}
+
+ .split-image{
+  border: 5px solid rgba(0,0,0,0.2);
+  width: 100%;
+  height: auto;
+  margin: 2em auto;
+  border-radius: 50%;
+  max-width: 100px;
+  display: block;
+}
+
+.Splitscreenslider_v2 .split-item h3 {
+  text-align: center;
+  margin: 0 0 2em 0;
+  font-weight: 700;
+}
+
+.Splitscreenslider_v2 .split-item p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.Splitscreenslider_v2 .split-item a {
+  color: currentColor;
+  display: block;
+  text-align: center;
+  margin: 1em 0 0 0;
+  width: 100%;
+}

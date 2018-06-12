@@ -1,17 +1,17 @@
 
-
-
-
 .comingsoon canvas{ 
   /* display: block;  */
   vertical-align: bottom; 
 } 
 /* ---- particles.js container ---- */ 
 #particles-js{ 
-  position:absolute; 
+  clear: both;
+  display: block;
+  position:absolute;
+  filter: blur(3px); 
   width: 100%; 
   height: 100%;  
-  background-image: url("https://www.radiocampusparis.org/wp-content/uploads/2015/12/Silicon-Valley-Minimum-Viable-Product-.jpg"); 
+  background-image: url("../../Imgs/blog-background.png"); 
   background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } 
   /* ---- stats.js ---- */ 
 .count-particles{ background: #000022; 
