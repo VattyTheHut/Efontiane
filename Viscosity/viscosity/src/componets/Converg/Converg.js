@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from "axios";
 
-import baseurl from "../Utlil/Util.js"
+import utlil from "../Utlil/Util.js"
 import './ Converg.css';
 
 
@@ -31,7 +31,7 @@ class Converg extends Component {
     // if(this.state.name ||)
     axios({
       method: 'post',
-      url: `${baseurl}/send`,
+      url: `${utlil.baseurl}/send`,
       data: this.state,
     })
     .then(response => { 

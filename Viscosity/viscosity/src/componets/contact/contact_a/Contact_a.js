@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import baseurl from "../../Utlil/Util.js"
+import utlil from "../../Utlil/Util.js"
 import './Contact_a.css';
 
 class Contact_a extends Component {
@@ -30,7 +30,7 @@ class Contact_a extends Component {
     console.log(this.state)
     axios({
       method: 'post',
-      url: `${baseurl}/contact`,
+      url: `${utlil.baseurl}/contact`,
       data: this.state,
     }).then(response => { 
       console.log(response)

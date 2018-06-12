@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import baseurl from "../Utlil/Util.js"
+import utlil from "../Utlil/Util.js"
 import Converg from "../Converg/Converg.js"
 import './Videoplug.css';
 
@@ -29,7 +29,7 @@ class Videoplug extends Component {
     console.log(this.state)
     axios({
       method: 'post',
-      url: `${baseurl}/consultation`,
+      url: `${utlil.baseurl}/consultation`,
       data: this.state,
        
     })
@@ -65,9 +65,9 @@ class Videoplug extends Component {
          </p>
          <div className="certs">
             <ul>
-               <li><img src={require("../../Imgs/adwords-logo.png")}/></li>
-               <li><img src={require("../../Imgs/hubspot-logo.webp")}/></li>
-               <li><img src={require("../../Imgs/FBC.png")}/></li>
+               <li><img alt="Google adwords logo" src={require("../../Imgs/adwords-logo.png")}/></li>
+               <li><img alt="Hubspot logo" src={require("../../Imgs/hubspot-logo.webp")}/></li>
+               <li><img alt="Facebook blueprint logo" src={require("../../Imgs/FBC.png")}/></li>
             </ul>
          </div>
       </section>
@@ -89,15 +89,15 @@ class Videoplug extends Component {
          <div className="right">
             <div>
                <ul>
-                  <li><img src={require("../../Imgs/member1.jpg")}/></li>
-                  <li><img src={require("../../Imgs/member2.jpg")}/></li>
-                  <li><img src={require("../../Imgs/member3.jpg")}/></li>
+                  <li><img alt="will" src={require("../../Imgs/member1.jpg")}/></li>
+                  <li><img alt="perry" src={require("../../Imgs/member2.jpg")}/></li>
+                  <li><img alt="jose" src={require("../../Imgs/member3.jpg")}/></li>
                </ul>
             </div>
             <div>
                <ul>
-                  <li><img src={require("../../Imgs/github-photo.jpg")}/></li>
-                  <li><img src={require("../../Imgs/member7.jpg")}/></li>
+                  <li><img alt="corlon" src={require("../../Imgs/github-photo.jpg")}/></li>
+                  <li><img alt="john" src={require("../../Imgs/member7.jpg")}/></li>
                </ul>
             </div>
          </div>

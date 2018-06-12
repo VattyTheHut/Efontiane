@@ -1,14 +1,10 @@
 
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import "dotenv/config";
+import utlil from "../Utlil/Util.js"
 import Button from "../Button/Button.js"
-import dotenv from 'dotenv'
-dotenv.config()
 // const AnyReactComponent = ({ text }) => <div>{text}</div>;
 require('dotenv').config()
-
-console.log(process.env.GOOGLE_MAPS_API)
 
 
 class Maps extends Component {
@@ -33,7 +29,7 @@ class Maps extends Component {
                     
                     }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_API}}
+          bootstrapURLKeys={{ key: utlil.googleapi}}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
