@@ -1,4 +1,4 @@
-.Splitscreenslider_v2{
+.SplitScreenSlider{
   direction: rtl;
 }
 
@@ -63,20 +63,20 @@
   display: block;
 }
 
-.Splitscreenslider_v2 .split-item h3 {
+.SplitScreenSlider .split-item h3 {
   text-align: center;
   margin: 0 0 2em 0;
   font-weight: 700;
 }
 
-.Splitscreenslider_v2 .split-item p {
+.SplitScreenSlider .split-item p {
   text-align: center;
   margin: 0 auto;
   max-width: 500px;
   line-height: 1.5;
 }
 
-.Splitscreenslider_v2 .split-item a {
+.SplitScreenSlider .split-item a {
   color: currentColor;
   display: block;
   text-align: center;

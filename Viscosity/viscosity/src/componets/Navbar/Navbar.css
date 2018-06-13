@@ -5,7 +5,7 @@ V1
   }
   
   .v1 {
-    position: relative;
+    position: absolute;
     /* Later change the position so that it work ok with everthing  */
     top: 0;
     
@@ -144,7 +144,7 @@ div.brackets a:hover:before, div.brackets a:hover:after
   
   .v1 .navbar .logo {
     float: left;
-    background-image: url("http://vpsmediagroup.com/assets/images/WhiteVPSLogo.png");
+    background-image: url("../../Imgs/WhiteVPSLogo.png");
     display: inline-block;
     margin-top: 5px;
     margin-left: 5%;
@@ -190,7 +190,7 @@ div.brackets a:hover:before, div.brackets a:hover:after
     margin-left: 5%;
     width: 40px;
     height: 40px;
-    background-image: url("http://vpsmediagroup.com/assets/images/WhiteVPSLogo.png"); 
+    background-image: url("../../Imgs/WhiteVPSLogo.png"); 
     transition: 0.5s ease;
   }
 

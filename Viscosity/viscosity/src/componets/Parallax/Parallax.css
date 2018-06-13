@@ -1,4 +1,4 @@
-.Parallax_a{
+.Parallax{
     height:100%;
     font-size:16px;
     font-family:"Lato", sans-serif;
@@ -7,7 +7,7 @@
     color:#666;
   }
 
-  .Parallax_a section h2{
+  .Parallax section h2{
     padding: 20px;
     color: #EABC47;
   }
@@ -28,15 +28,15 @@
   
   .pimg1{
     /* background-position: right; */
-    background-image:url('../../../Imgs/pimg1.jpg');
+    background-image:url('../../Imgs/pimg1.jpg');
     min-height:70vh;
   }
   .pimg2{
-    background-image:url('../../../Imgs/pimg2.jpg');
+    background-image:url('../../Imgs/pimg2.jpg');
     min-height:400px;
   }
   .pimg3{
-    background-image:url('../../../Imgs/tech-logo.jpg');
+    background-image:url('../../Imgs/tech-logo.jpg');
     min-height:400px;
   }
   

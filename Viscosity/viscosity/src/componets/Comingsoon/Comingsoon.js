@@ -1,6 +1,6 @@
 import React from "react"
 import "./Comingsoon.css"
-import { $ } from 'jquery';
+// import { $ } from 'jquery';
 
 
 class Comingsoon extends React.Component{
@@ -36,22 +36,22 @@ class Comingsoon extends React.Component{
             <div id="container">
                <div id="comming-soon">
                   <span>Blog comming Soon!</span>
-                  <ul class="countdown">
+                  <ul className="countdown">
                      <li>
-                        <span class="days">OO</span>
-                        <p class="under-t">days</p>
+                        <span className="days">OO</span>
+                        <p className="under-t">days</p>
                      </li>
                      <li>
-                        <span class="hours">OO</span>
-                        <p class="under-t">hours</p>
+                        <span className="hours">OO</span>
+                        <p className="under-t">hours</p>
                      </li>
                      <li>
-                        <span class="minutes">OO</span>
-                        <p class="under-t">minutes</p>
+                        <span className="minutes">OO</span>
+                        <p className="under-t">minutes</p>
                      </li>
                      <li>
-                        <span class="seconds">OO</span>
-                        <p class="under-t">seconds</p>
+                        <span className="seconds">OO</span>
+                        <p className="under-t">seconds</p>
                      </li>
                   </ul>
                </div>

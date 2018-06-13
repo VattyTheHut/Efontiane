@@ -49,6 +49,7 @@ module.exports = {
       },
 
     plugins: [
+        new webpack.EnvironmentPlugin( { ...process.env } )
 
     ]
 }

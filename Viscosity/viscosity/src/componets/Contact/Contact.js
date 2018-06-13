@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import utlil from "../../Utlil/Util.js"
-import './Contact_a.css';
+import utlil from "../Utlil/Util.js"
+import './Contact.css';
 
-class Contact_a extends Component {
+class Contact extends Component {
 
   constructor(props){
     super(props)
@@ -41,7 +41,7 @@ class Contact_a extends Component {
 }
   render() {
     return (
-      <div className="Contact_a">
+      <div className="Contact">
       <section>
          <div className="contact-background">Contact Us</div>
       </section>
@@ -178,4 +178,4 @@ class Contact_a extends Component {
   }
 }
 
-export default Contact_a;
+export default Contact;

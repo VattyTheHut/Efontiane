@@ -13,20 +13,20 @@
   background-image: url("https://media.glassdoor.com/l/72/68/6e/20/hired-nyc.jpg")
 }
 
-.Contact_a{
+.Contact{
   display: block;
   position: relative;
   clear: both;
 }
 
 
-.Contact_a .form-group input{
+.Contact .form-group input{
   height: 37px;
   width: 200px;
   border-radius: 3.5px;
   font-size: 18px;
   line-height: 18px; 
-}.Contact_a button{
+}.Contact button{
   font-size: 30px;
   line-height: 43px;
   font-weight: 400;
@@ -38,22 +38,22 @@
   background-color: #31495E;
 }
 
-.Contact_a .validation {
+.Contact .validation {
   display:none;
   margin: 0 0 10px;
   font-weight:400;
   font-size:13px;
   color: #DE5959;
 }
-.Contact_a .form-group {
+.Contact .form-group {
   overflow: hidden;
   clear: both;
   font-size: 18px;
   line-height: 18px;
   /* width: 196px; */
-}.Contact_a .form-group p{
+}.Contact .form-group p{
   padding: 5px;
-}.Contact_a .icon-case {
+}.Contact .icon-case {
   width: 35px;
   float: left;
   border-radius: 5px 0px 0px 5px;
@@ -64,14 +64,14 @@
   line-height:40px;
 }
 
- .Contact_a i {color:#555;} 
- .Contact_a textarea {resize: none;} 
+ .Contact i {color:#555;} 
+ .Contact textarea {resize: none;} 
  .select_input{
   max-width: 500px;
   min-width: 400px;
   height: 40px;
 }
-.Contact_a .wrapper{
+.Contact .wrapper{
   clear: both;
   color: #555;
 }
@@ -93,7 +93,7 @@
   background-color: #F6F6F6;
 }
 
-.Contact_a .right-right, .Contact_a .right-left{
+.Contact .right-right, .Contact .right-left{
   float: left;
   /* margin-right: 5%; */
 }

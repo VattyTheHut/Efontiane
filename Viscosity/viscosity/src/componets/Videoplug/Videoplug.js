@@ -72,7 +72,7 @@ class Videoplug extends Component {
          </div>
       </section>
       <section className="section section-b">
-         <div className="left">
+         <div className="b-left">
             <div>
                <h2>
                   The Team You Need <br />To Succeed.
@@ -86,20 +86,20 @@ class Videoplug extends Component {
                </p>
             </div>
          </div>
-         <div className="right">
-            <div>
-               <ul>
-                  <li><img alt="will" src={require("../../Imgs/member1.jpg")}/></li>
-                  <li><img alt="perry" src={require("../../Imgs/member2.jpg")}/></li>
-                  <li><img alt="jose" src={require("../../Imgs/member3.jpg")}/></li>
-               </ul>
-            </div>
-            <div>
-               <ul>
-                  <li><img alt="corlon" src={require("../../Imgs/github-photo.jpg")}/></li>
-                  <li><img alt="john" src={require("../../Imgs/member7.jpg")}/></li>
-               </ul>
-            </div>
+         <div className="b-right">
+           
+           
+              <div><img alt="will" src={require("../../Imgs/member1.jpg")}/>
+              <img alt="perry" src={require("../../Imgs/member2.jpg")}/>
+              <img alt="jose" src={require("../../Imgs/member3.jpg")}/>
+              <img alt="john" src={require("../../Imgs/member7.jpg")}/></div>
+              <div><img alt="will" src={require("../../Imgs/member1.jpg")}/>
+              <img alt="perry" src={require("../../Imgs/member2.jpg")}/>
+              <img alt="jose" src={require("../../Imgs/member3.jpg")}/>
+              <img alt="john" src={require("../../Imgs/member7.jpg")}/></div>
+              
+           
+           
          </div>
       </section>
       <section className="section section-c">

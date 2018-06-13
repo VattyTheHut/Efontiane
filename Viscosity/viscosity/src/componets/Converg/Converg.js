@@ -28,19 +28,19 @@ class Converg extends Component {
   }
 
   onSubmit() {
-    // if(this.state.name ||)
+    console.log(this.state);
     axios({
       method: 'post',
-      url: `${utlil.baseurl}/send`,
+      url: `${utlil.baseurl}/converg`,
       data: this.state,
     })
     .then(response => { 
       console.log(response)
-      this.setState({email: "", phone: "", name: ""})
     })
     .catch(error => {
         console.log(error.response)
     });
+    // this.setState({email: "", phone: "", name: ""})
 }
   render() {
 
@@ -48,12 +48,10 @@ class Converg extends Component {
       <div className="Converg">
         <h1>Everything <span>You</span> Need to <span>Succeed</span> Online</h1>
         <div>
-          <form>
             <div><input onChange={this.handleInputChange} value={this.state.name} type="text" placeholder="Full Name" name="name" id="name_input" required /></div>
             <div><input onChange={this.handleInputChange} value={this.state.email} type="text" placeholder="Email Address" name="email" id="email_input" required /></div>
             <div><input onChange={this.handleInputChange} value={this.state.phone} type="text" placeholder="Phone Number" name="phone" id="phone_input" required /></div>
             <div><input onClick={this.onSubmit} type="submit" value="Get Started" id="form_button" /></div>
-          </form>
         </div>
       </div>
     );

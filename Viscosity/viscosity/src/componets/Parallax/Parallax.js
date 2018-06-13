@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Parallax_a.css';
+import './Parallax.css';
 
-class Parallax_a extends Component {
+class Parallax extends Component {
   render() {
     return (
-      <div className="Parallax_a">
+      <div className="Parallax">
    <div className="pimg1">
       <div className="ptext">
          <span className="border">
@@ -140,12 +140,12 @@ class Parallax_a extends Component {
       </div>
       <div className="code-logos">
          <div>
-            <img alt="babel(ES6) img icon" className="react-img" src={require("../../../Imgs/babel-logo.png")}/>
-            <img alt="Amazon Web Service logo img icon" className="react-img" src={require("../../../Imgs/AWS-logo.png")}/>
+            <img alt="babel(ES6) img icon" className="react-img" src={require("../../Imgs/babel-logo.png")}/>
+            <img alt="Amazon Web Service logo img icon" className="react-img" src={require("../../Imgs/AWS-logo.png")}/>
          </div>
          <div>
-            <img alt="React.js img icon" className="react-img" src={require("../../../Imgs/React_logo.png")}/>
-            <img alt="Mongodb img icon" className="react-img" src={require("../../../Imgs/mongodb-logo.png")}/>
+            <img alt="React.js img icon" className="react-img" src={require("../../Imgs/React_logo.png")}/>
+            <img alt="Mongodb img icon" className="react-img" src={require("../../Imgs/mongodb-logo.png")}/>
          </div>
       </div>
    </section>
@@ -161,4 +161,4 @@ class Parallax_a extends Component {
   }
 }
 
-export default Parallax_a;
+export default Parallax;

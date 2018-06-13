@@ -4,7 +4,6 @@ import GoogleMapReact from 'google-map-react';
 import utlil from "../Utlil/Util.js"
 import Button from "../Button/Button.js"
 // const AnyReactComponent = ({ text }) => <div>{text}</div>;
-require('dotenv').config()
 
 
 class Maps extends Component {

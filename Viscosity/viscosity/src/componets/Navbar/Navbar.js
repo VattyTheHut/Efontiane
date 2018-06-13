@@ -11,9 +11,6 @@ class Navbar extends Component {
 
     let getNavbar = (v, side) => {
 
-      const sideType = {
-        
-      }
       const navType = {
         v1: <div className="v1">
         <header>
@@ -40,8 +37,7 @@ class Navbar extends Component {
                  </li>
               </ul>
               <div className="logo"> {/*logo*/}
-                 <img src="http://vpsmediagroup.com/assets/images/WhiteVPSLogo.png" />
-                 {/* <a href="http://vpsmediagroup.com/">VPSMediaGroup</a> */}
+                 <img alt="White VPS Logo" src="../../imgs/WhiteVPSLogo.png" />
               </div>
            </div>
         </header>
